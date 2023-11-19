@@ -6,6 +6,9 @@ class ColorManager{
   static Color black = const Color(0xff000000);
   static Color white = const Color(0xffFFFFFF);
 
+  static Color whiteWithOpacity30 = const Color(0x4DFFFFFF);
+
+
   static Color yellow = const Color(0xFFDDB130);
 
   static Gradient backgroundGradient = LinearGradient(

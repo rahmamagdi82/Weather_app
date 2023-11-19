@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../utiles/resources/color_manager.dart';
-
 class CustomNavigationDestination extends StatelessWidget {
   const CustomNavigationDestination({super.key, required this.label, required this.icon});
 
@@ -9,6 +7,6 @@ class CustomNavigationDestination extends StatelessWidget {
   final IconData icon;
   @override
   Widget build(BuildContext context) {
-    return NavigationDestination(label: label, icon: Icon(icon,color: ColorManager.white,),);
+    return NavigationDestination(label: label, icon: Icon(icon,),);
   }
 }

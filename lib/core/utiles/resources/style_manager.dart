@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather/gen/fonts.gen.dart';
 
 import 'font_manager.dart';
 
@@ -7,9 +8,10 @@ class FontStyles{
 // regular style
 
   static TextStyle getRegularStyle({
-    double fontSize=FontSize.s14,
+    double fontSize=FontSize.s18,
   }){
     return TextStyle(
+      fontFamily: FontFamily.overpass,
       fontSize: fontSize,
       fontWeight: FontWeightManager.regular,
     );
@@ -21,6 +23,7 @@ class FontStyles{
     double fontSize=FontSize.s14,
   }){
     return TextStyle(
+      fontFamily: FontFamily.overpass,
       fontSize: fontSize,
       fontWeight: FontWeightManager.medium,
     );
@@ -29,8 +32,9 @@ class FontStyles{
 // bold style
 
   static TextStyle getBoldStyle(
-      {double fontSize = FontSize.s16,}) {
+      {double fontSize = FontSize.s24,}) {
     return TextStyle(
+      fontFamily: FontFamily.overpass,
       fontSize: fontSize,
       fontWeight: FontWeightManager.bold,
     );
@@ -41,6 +45,7 @@ class FontStyles{
   static TextStyle getSemiBoldStyle(
       {double fontSize = FontSize.s18,}) {
     return TextStyle(
+      fontFamily: FontFamily.overpass,
       fontSize: fontSize,
       fontWeight: FontWeightManager.semiBold,
     );
