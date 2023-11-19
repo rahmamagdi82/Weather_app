@@ -19,10 +19,24 @@ class $AssetsAnimationsGen {
   List<String> get values => [logo];
 }
 
+class $AssetsImagesGen {
+  const $AssetsImagesGen();
+
+  /// File path: assets/images/hum.svg
+  String get hum => 'assets/images/hum.svg';
+
+  /// File path: assets/images/windy.svg
+  String get windy => 'assets/images/windy.svg';
+
+  /// List of all assets
+  List<String> get values => [hum, windy];
+}
+
 class Assets {
   Assets._();
 
   static const $AssetsAnimationsGen animations = $AssetsAnimationsGen();
+  static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 
 class AssetGenImage {
